@@ -1,12 +1,12 @@
 (function (blink) {
 	'use strict';
 
-	var ModernStyle = function () {
+	var BayardStyle = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	ModernStyle.prototype = {
+	BayardStyle.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_Bayard',
@@ -117,9 +117,9 @@
 		//BK15873 Quitamos la funcion getEditorStyles para que herede de parent
 	};
 
-	ModernStyle.prototype = _.extend({}, new blink.theme.styles.basic(), ModernStyle.prototype);
+	BayardStyle.prototype = _.extend({}, new blink.theme.styles.basic(), BayardStyle.prototype);
 
-	blink.theme.styles.Bayard = ModernStyle;
+	blink.theme.styles.Bayard = BayardStyle;
 
 })( blink );
 
@@ -145,4 +145,3 @@ $(document).ready(function () {
 		$('.content_type_clase_Bayard').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
 	}
 });
-
