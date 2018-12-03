@@ -41,7 +41,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title, body:not
 
 
 #indice .unit-content .material .item .imagen.libro:before{
-	background-image: url(/images/BOTON-GUIA-DIDACTICA.png);
+	background-image: url(images/BOTON-GUIA-DIDACTICA.png);
 }
 
 #indice .unit-content .material .item .imagen.libro:after {
@@ -49,7 +49,7 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title, body:not
 }
 
 #indice .unit-content .material .item .imagen.actividad:before {
-    background-image: url(/images/BOTON-INTERACTIVOS.png);
+    background-image: url(images/BOTON-INTERACTIVOS.png);
 }
 
 #indice .unit-content .material .item .imagen.actividad:after {
